@@ -1,11 +1,15 @@
 #!/bin/bash
 
-if [ 1+3 == 4 ]
+ID =$(id -u)
+
+if [ $ID -ne 0 ]
 then
-    print ("correct")
-else 
-    print ("wrong")    
+    echo "ERROR: Please run root user"
+else
+    echo "You are root user"
 fi
+
+
 
 
 
