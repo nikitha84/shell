@@ -16,5 +16,5 @@ if [ $? -ne 0 ]
 then 
     echo "ERROR: Git installation failed"
 else
-    echo " Git installation Success
-fi    
+    echo "Git installation Success"
+fi
