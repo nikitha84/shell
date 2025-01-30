@@ -3,9 +3,9 @@
 VALIDATE(){
     if [ $? -ne 0 ]
     then 
-        echo "ERROR: Git installation failed"
+        echo "ERROR: installation failed"
     else
-        echo "Git installation Success"
+        echo "installation Success"
     fi
 }
 
@@ -21,6 +21,6 @@ fi
 yum install git -y
 
 VALIDATE
-yum install git -y
+yum install mysql -y
 VALIDATE
 
