@@ -2,9 +2,9 @@
 
 if [ 1+3 == 4 ]
 then
-    print "correct"
+    print ("correct")
 else 
-    print ""    
+    print ("wrong")    
 fi
 
 
