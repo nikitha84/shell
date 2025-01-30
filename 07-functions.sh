@@ -1,11 +1,11 @@
 #!/bin/bash
 
 VALIDATE(){
-    if [ $? -ne 0 ]
+    if [ $1 -ne 0 ]
     then 
-        echo "ERROR: installation failed"
+        echo "ERROR: $2 ..installation failed"
     else
-        echo "installation Success"
+        echo "$2....installation Success"
     fi
 }
 
