@@ -1,21 +1,28 @@
 #!/bin/bash
 
+#adding timeformate,logs and colurs
+
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
-        echo "ERROR: $2 ..installation failed"
+        echo -e "ERROR: $2 ..installation $R failed $N"
     else
-        echo "$2....installation Success"
+        echo "$2....installation $G Success $N"
     fi
 }
 
 ID=$(id -u)
 if [ $ID -ne 0 ]
 then 
-    echo "ERROR : Please run with root user"
+    echo -e "ERROR : $R Please run with root user $N"
     exit 1
 else
     echo "you are root user"
