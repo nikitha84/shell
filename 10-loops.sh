@@ -30,7 +30,7 @@ do
     yum list installed $package
     if [ $? -ne 0 ]
     then
-        yum install &package -y
+        yum list installed $package -y
         VALIDATE $? "Installation of $package"
     else
         echo -e "$package is already installed  $Y skipping $N"
