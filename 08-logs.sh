@@ -4,7 +4,6 @@
 
 R="\e[31m"
 G="\e[32m"
-Y="\e[33m"
 N="\e[0m"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
@@ -15,7 +14,7 @@ VALIDATE(){
     then 
         echo -e "ERROR: $2 ..installation $R failed $N"
     else
-        echo "$2....installation $G Success $N"
+        echo -e "$2....installation $G Success $N"
     fi
 }
 
